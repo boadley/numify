@@ -20,7 +20,7 @@ def numify(alphanum):
         A more comprehensive usage example can be found here https://jaboadley.netlify.app 
     """
     # Check if alphanum format is valid
-    pattern =  '^([0-9]*)(\s)*([kKmMbBtT])$'
+    pattern =  '^([0-9.]*)(\s)*([kKmMbBtT])$'
     match =  re.search(pattern, alphanum)
     if match is None:
 	    raise ValueError("Invalid Input: correct format is 1k, 1K, 1 k, 1 K.")
@@ -51,5 +51,3 @@ def numify(alphanum):
 	        trilofy = int_part * 1000000000000
 	        num = floater(trilofy)
 	        return num
-
-print(numify("-23 k"))
