@@ -11,12 +11,12 @@ README = (HERE / "README.md").read_text()
 setup(
     name="numify",
     version="1.0.0",
-    description="Convert alphanumeric characters to integers",
+    description="Convert alphanumeric characters to integers i.e 1k to 1000",
     long_description=README,
     long_description_content_type="text/markdown",
-    url="https://github.com/realpython/reader",
-    author="Real Python",
-    author_email="YOUR_EMAIL_ADDRESS_HERE",
+    url="https://github.com/boadley/numify",
+    author="jaboadley",
+    author_email="numify@mailinator.com",
     license="MIT",
     classifiers=[
         "License :: OSI Approved :: MIT License",
@@ -24,11 +24,8 @@ setup(
         "Programming Language :: Python :: 3.7",
     ],
     packages=["numify"],
-    include_package_data=True,
-    install_requires=["feedparser", "html2text"],
-    entry_points={
-        "console_scripts": [
-            "realpython=reader.__main__:main",
-        ]
-    },
+    include_package_data=False,
+    install_requires=[
+        # -*- Extra requirements: -*-
+    ],
 )

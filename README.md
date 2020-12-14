@@ -1,7 +1,7 @@
 # Numify
 Numify is a Python (2 and 3) library for converting alphanumeric characters into integers.
 
-Numify is the opposite of (another python library, that can be found [here](https://github.com/davidsa03/numerize)).
+Numify is the opposite of Numerize (another python library, that can be found [here](https://github.com/davidsa03/numerize)).
 
 ## Installation
 You can install the Numify from PyPI:
