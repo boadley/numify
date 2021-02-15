@@ -14,9 +14,9 @@ The library is supported on Python 2.7, as well as Python 3.4 and above.
 numify(alphanumeric_to_numify)
 ```
 >>> from numify import numify
->>> numify('12K')
+>>> numify.numify('12K')
 12000
->>> numify('15   k')
+>>> numify.numify('15   k')
 15000
 ```
 This will convert the alphanumeric string '15   k' into an integer like 15000 (ignoring the spaces between).
