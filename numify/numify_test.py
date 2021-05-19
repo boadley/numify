@@ -2,6 +2,8 @@ from numify import numify
 import unittest
 
 # ** Tests**
+
+
 class TestNumify(unittest.TestCase):
 
     # Test if middle spaces are ignored
@@ -26,5 +28,6 @@ class TestNumify(unittest.TestCase):
 
     def test_negative_alphanum_value(self):
         self.assertEqual(numify("-33.65M"), -33650000)
+
 
 unittest.main()
