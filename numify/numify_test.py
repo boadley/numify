@@ -1,5 +1,6 @@
-from numify import numify
 import unittest
+
+from numify import numify
 
 # ** Tests**
 
