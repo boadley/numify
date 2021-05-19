@@ -10,7 +10,7 @@ def numify(alphanum):
         num (int, float): The equivalent of `alphanum` in integer or float.
         
     Raises:
-        ValueError: Raised if alphanum does not match the pattern `^([0-9]*)(\s)?([kKmMbB])$`
+        ValueError: Raised if alphanum does not match the pattern `^(-?[0-9]*)(\s)?([kKmMbB])$`
         
     Notes:
         print(numify('2k')) // 2000
@@ -20,7 +20,7 @@ def numify(alphanum):
         A more comprehensive usage example can be found here https://jaboadley.netlify.app 
     """
     # Check if alphanum format is valid
-    pattern =  '^([0-9.]*)(\s)*([kKmMbBtT])$'
+    pattern =  '^(-?[0-9.]*)(\s)*([kKmMbBtT])$'
     match =  re.search(pattern, alphanum)
     if match is None:
 	    raise ValueError("Invalid Input: correct format is 1k, 1K, 1 k, 1 K.")
