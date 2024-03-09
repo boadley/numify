@@ -27,14 +27,14 @@ This will convert the alphanumeric string '15   k' into an integer like 15000 (i
 |`numify("1K")     `| 1000|
 |`numify("1k")     `| 1000|
 |`numify("1   K")  `| 1000|
-|`numify("1.5K)    `| 1500|
-|`numify("1M)      `| 1000000|
-|`numify("1.5m)    `| 1500000|
-|`numify("1B)      `| 1000000000|
-|`numify("1.5b)    `| 1500000000|
-|`numify("1T)      `| 1000000000000|
+|`numify("1.5K")   `| 1500|
+|`numify("1M")     `| 1000000|
+|`numify("1.5m")   `| 1500000|
+|`numify("1B")     `| 1000000000|
+|`numify("1.5b")   `| 1500000000|
+|`numify("1T")     `| 1000000000000|
+|`numify("-1M")    `| -1000000|
 
 
 ## Testing
 `$ python numify/numify_test.py`
-
